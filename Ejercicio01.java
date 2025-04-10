@@ -26,11 +26,18 @@ public class Matriz {
     }
     private static void ejecutarOpcion(int opcion) {
         switch (opcion) {
-            case 1 -> pedirFilasyColumnas();
+            case 1 -> ejecucion();
             case 2 -> System.out.println("  Hasta luego...");
             default -> System.out.println(" Opcion invalida...");
         }
     }
+    private static void ejecucion(){
+        pedirFilasyColumnas();
+        validarDimensiones(int filas, int cols);
+        crearmatriz();
+
+    }
+
 
     private static void pedirFilasyColumnas() {
         System.out.println("ingrese la cantidad de:");
@@ -38,17 +45,25 @@ public class Matriz {
         filas= Integer.parseInt(scanner.nextLine());
         System.out.println("Columnas: ");
         cols= Integer.parseInt(scanner.nextLine());
-        validarDimensiones(int filas, int cols;)
-    }
+            }
 
-    public static boolean validarDimensiones(int filas, int cols){
+    public static boolean validarDimensiones(int filas, int cols) {
 
-        if (fila >=0 & cols>=0){
+        if (fila >= 0 & cols >= 0) {
             return true;
+        } else {
+            System.out.println("ocurrio un error");
+            return false;
+
         }
-        else(){
-        }
+
     }
+    public int crearMatriz(int filas, in cols){
+
+    }
+
+}
+
 
 
 }
