@@ -86,10 +86,10 @@ public class Matriz {
         }
     }
     public static int verificarCero() {
-        for (int x = 0; x < matriz.length; x++);
-            for (int y = 0; y < matriz.length; y++)
+        for (int x = 0; x < matriz.length; x++){
+            for (int y = 0; y < matriz.length; y++) {
+            }
 
-        {
     }
 
 }
